@@ -9,9 +9,8 @@ import android.support.v7.widget.Toolbar;
 
 import com.alexkgn.listapp.R;
 import com.alexkgn.listapp.data.Picture;
-import com.alexkgn.listapp.ui.AddPictureActivity;
+import com.alexkgn.listapp.ui.add_picture.AddPictureActivity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;

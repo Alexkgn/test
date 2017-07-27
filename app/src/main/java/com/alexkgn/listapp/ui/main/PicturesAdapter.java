@@ -44,7 +44,7 @@ public class PicturesAdapter extends RecyclerView.Adapter<PicturesAdapter.Holder
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new Holder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_picture, parent));
+        return new Holder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_picture, null));
     }
 
     @Override
@@ -74,7 +74,7 @@ public class PicturesAdapter extends RecyclerView.Adapter<PicturesAdapter.Holder
         @BindView(R.id.title)
         TextView mTitleTextView;
 
-        @BindView(R.id.desctription)
+        @BindView(R.id.description)
         TextView mDescriptionTextView;
 
         public Holder(View itemView) {

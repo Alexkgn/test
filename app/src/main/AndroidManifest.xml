@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alexkgn.listapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
         android:name=".App"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -20,8 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AddPictureActivity" />
-        <activity android:name=".ui.description.DescriptionActivity" />
+        <activity
+            android:name=".ui.add_picture.AddPictureActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.description.DescriptionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

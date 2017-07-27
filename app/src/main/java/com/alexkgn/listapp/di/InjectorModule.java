@@ -1,5 +1,7 @@
 package com.alexkgn.listapp.di;
 
+import com.alexkgn.listapp.di.activities.AddPictureActivityModule;
+import com.alexkgn.listapp.ui.add_picture.AddPictureActivity;
 import com.alexkgn.listapp.ui.main.MainActivity;
 
 import dagger.Module;
@@ -18,5 +20,11 @@ public abstract class InjectorModule {
             MainActivityModule.class
     })
     abstract MainActivity mainActivity();
+
+    @ActivityScope
+    @ContributesAndroidInjector(modules = {
+            AddPictureActivityModule.class
+    })
+    abstract AddPictureActivity addPictureActivity();
 
 }

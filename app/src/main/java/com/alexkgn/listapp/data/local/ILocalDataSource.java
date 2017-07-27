@@ -1,6 +1,10 @@
-package com.alexkgn.listapp.data;
+package com.alexkgn.listapp.data.local;
 
 import android.support.annotation.NonNull;
+
+import com.alexkgn.listapp.data.Picture;
+
+import java.util.List;
 
 import io.reactivex.Completable;
 import io.reactivex.Observable;
