@@ -130,5 +130,6 @@ public class AddPictureActivity extends DaggerAppCompatActivity implements IAddV
     @Override
     public void pictureSaved() {
         Toast.makeText(this, "Изобраджение сохранено", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }

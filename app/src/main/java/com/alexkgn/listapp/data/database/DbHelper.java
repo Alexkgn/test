@@ -55,9 +55,7 @@ public class DbHelper extends SQLiteOpenHelper implements IDbHelper {
         SQLiteDatabase db = getWritableDatabase();
         db.beginTransaction();
         try {
-            db.delete(DatabaseContract.PictureEntry.TABLE_NAME, null, null);
             ContentValues values = new ContentValues();
-            values.put(DatabaseContract.PictureEntry._ID, picture.getId());
             values.put(DatabaseContract.PictureEntry.COLUMN_TITLE, picture.getTitle());
             values.put(DatabaseContract.PictureEntry.COLUMN_DESCRIPTION, picture.getDescription());
             values.put(DatabaseContract.PictureEntry.COLUMN_PICTURE, picture.getPicture());

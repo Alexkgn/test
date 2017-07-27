@@ -46,9 +46,14 @@ public class MainActivity extends DaggerAppCompatActivity implements IMainView {
         setSupportActionBar(mToolbar);
 
         mPresenter.bind(this);
-        mPresenter.getAllPictures();
 
         initViews();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mPresenter.getAllPictures();
     }
 
     @Override
